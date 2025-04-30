@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+     <script>
+        function procesarFormulario(event) {
+            event.preventDefault();
+            alert('Formulario procesado');
+        }
+    </script>
+</head>
+
+<body>
+    <header class="cabexa">
+        <h1>Formulario</h1>
+    </header>
+    <nav>
+        <div class="boton">
+            <a href="index.html">pagina principal</a>
+
+        </div>
+        <div>
+            <a href="formulario.html">formulario</a>
+        </div>
+        <div>
+            <a href="curriculum.html">Curriculum</a>
+        </div>
+        <div>
+            <a href="sobremiproyecto.html">sobre mi proyecto</a>
+        </div>
+    </nav>
+    <h1 class="titulo">Rellena este formulario</h1>
+    <aside>
+        <h1>Informacion Personal</h1>
+        <img src="imagenes/descarga (2).jpeg">
+        <ul>
+            <li>Ruben Pelaez Medina</li>
+            <br>
+            <li>Edad - 24</li>
+            <br>
+            <li>Fecha de nacimiento - 16/08/2000</li>
+            <br>
+            <li>Altura - 1,72</li>
+            <br>
+            <li>Lugar donde resido - Moratalaz,Madrid</li>
+            <br>
+            <li>Codigo Postal - 28030</li>
+
+        </ul>
+    </aside>
+    <aside class="aside2">
+        <h1>Informacion Personal</h1>
+        <img src="imagenes/descarga (2).jpeg">
+        <ul>
+            <li>Ruben Pelaez Medina</li>
+            <br>
+            <li>Edad - 24</li>
+            <br>
+            <li>Fecha de nacimiento - 16/08/2000</li>
+            <br>
+            <li>Altura - 1,72</li>
+            <br>
+            <li>Lugar donde resido - Moratalaz,Madrid</li>
+            <br>
+            <li>Codigo Postal - 28030</li>
+
+        </ul>
+    </aside>
+
+    <form action="" onsubmit="procesarFormulario(event)">
+        <fieldset>
+            <legend>
+                <h3 class="Registros">Datos de Registros</h3>
+            </legend>
+            <label for="correo"> <strong>Correo Electronico:</strong></label>
+            <input id="correo" type="text">
+            <br>
+            <br>
+            <br>
+            <label for="usuario"> <strong>Usuario:</strong></label>
+            <input id="usuario" type="text">
+            <br>
+            <br>
+            <br>
+            <label for="contraseña"> <strong>Contraseña:</strong></label>
+            <input id="contraseña" type="password">
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3 class="personales">Datos Personales</h3>
+            </legend>
+            <label for="Nombre"> <strong>Nombre completo:</strong></label>
+            <input id="nombre" type="text">
+            <br>
+            <br>
+            <label for="fecha"> <strong>Fecha de nacimiento:</strong></label>
+            <input id="fecha" type="date">
+            <br>
+            <br>
+            <label for="sexo"> <strong>Sexo:</strong></label>
+            <input type="radio" name="sexo" value="1">Hombre
+            <input type="radio" name="sexo" value="1">Mujer
+            <input type="radio" name="sexo" value="1">Prefiero no decirlo
+            <br>
+            <br>
+            <label for="altura"> <strong>Altura:</strong></label>
+            <input id="altura" type="number">
+            <br>
+            <br>
+            <label for="telefono"> <strong>Numero de telefono:</strong></label>
+            <input id="telefono" type="tel">
+            <br>
+            <br>
+            <label for="Estado"> <strong>Estado civil:</strong></label>
+            <select>
+                <option value="2">Soltero</option>
+                <option value="3">Casado</option>
+                <option value="5">Prefiere no decirlo</option>
+            </select>
+            <br>
+            <br>
+            <label for="Color"> <strong>Color:</strong></label>
+            <input id="color" type="color">
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>Registros Academicos</h3>
+            </legend>
+            <label for="titulo"> <strong>Titulos academicos:</strong></label>
+                <input type="radio" name="p2" value="1"> ESO
+                <input type="radio" name="p2" value="2"> Grado Medio
+                <input type="radio" name="p2" value="3"> Grado Superior
+              </p>
+              <label for="Idiomas"> <strong>Idiomas</strong></label>
+                <input type="radio" name="p2" value="1"> Español
+                <input type="radio" name="p2" value="2"> Catalan
+                <input type="radio" name="p2" value="3"> Ingles
+              </p>
+              <br>
+              <label for="habilidades">Escriba que habilidades tienes :</label><br>
+              <br>
+              <textarea id="habilidades" rows="6" cols="50" required></textarea>
+  </fieldset>
+  <section class="botones">
+    <br>
+      <input class="enviar" type="submit" value="Enviar">
+      <input class="valores" type="reset" value="Valores por defecto">
+  </section>
+    </form>
+    
+
+</body>
+
+</html>
